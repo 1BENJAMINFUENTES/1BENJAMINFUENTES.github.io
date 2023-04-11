@@ -201,12 +201,22 @@ color: #fff;
 .knowledge__texts{
   text-align: center;
 }
+@media screen and (max-width: 790px){
+  .knowledge__img {
+     width: 80%;
+   }
+   .knowledge__img{
+     grid-template-columns:  1fr;
+     place-items: center;
+   }
+ }
 
 /*requisitos */
 .home-requisites {
   background-color: #00000000;
   color: rgb(255, 251, 0);
-  margin: 150px 500px;
+  margin: 100px 100px 100px 100px;
+ 
  
  
  
@@ -224,7 +234,7 @@ text-align: center;
 .home-requisites li {
 background: url(https://static.kueski.com/v2/pics/home/bullet_check_square-abfc4d422d7918cd7c72bee49f6cb1e93651ab3efa49ba514c880136a349b3e5.svg) no-repeat left top;
 background-size: 23px;
-padding: 0 0 3px 40px;
+padding: 0 0 10px 40px;
 list-style: none;
 
 
@@ -629,6 +639,15 @@ body{
   cursor: pointer;
   
 }
+@media screen and (max-width: 790px){
+  .testimony-img{
+     width: 80%;
+   }
+   .testimony-img{
+     grid-template-columns:  1fr;
+     place-items: center;
+   }
+ }
 
 /* Footer */
 
