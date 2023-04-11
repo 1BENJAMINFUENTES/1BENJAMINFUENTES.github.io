@@ -169,7 +169,7 @@
 
 background-position: 0 0,10px 10px;
 overflow: hidden;
-border-radius: 180px;
+border-radius: 20px;
 color: #fff;
 }
 
@@ -210,6 +210,12 @@ color: #fff;
      place-items: center;
    }
  }
+  
+@media (max-width:650px){
+  .knowledge__container {
+      display: block;
+  }
+}
 
 /*requisitos */
 .home-requisites {
@@ -503,7 +509,7 @@ body{
   align-items: center;
   align-content: center;
  
-  margin: 50px 50px 50px 100px ;
+  margin:  50px 50px 100px ;
 
  
 }
@@ -639,15 +645,12 @@ body{
   cursor: pointer;
   
 }
-@media screen and (max-width: 790px){
-  .testimony-img{
-     width: 80%;
-   }
-   .testimony-img{
-     grid-template-columns:  1fr;
-     place-items: center;
-   }
- }
+
+@media (max-width:650px){
+  .testimony-body{
+      display: block;
+  }
+}
 
 /* Footer */
 
