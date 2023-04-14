@@ -174,7 +174,7 @@ color: #fff;
 }
 
 .knowledge__img{
-  border-radius: 100px;
+  border-radius: 20px;
 }
 
 .knowledge__container{
@@ -203,7 +203,8 @@ color: #fff;
 }
 @media screen and (max-width: 790px){
   .knowledge__img {
-     width: 80%;
+    margin: 30px 100px 10px 1px;
+    width: 250px;
    }
    .knowledge__img{
      grid-template-columns:  1fr;
@@ -273,6 +274,32 @@ list-style: none;
   --color-cta: #fdfdff;
   --color-items: #010005;
 }
+.price-element2{
+  background: url("/IMAGES/price4.jpg");
+  text-align: center;
+  border-radius: 10px;
+  width: 330px;
+  padding: 40px;
+  --color-plan: #000000;
+  --color-price:#1d293f;
+  --bg-cta: #fff;
+  --color-cta: #fdfdff;
+  --color-items: #010005;
+}
+.price-element3{
+  background: url("/IMAGES/price5.jpg");
+  text-align: center;
+  border-radius: 10px;
+  width: 330px;
+  padding: 40px;
+  --color-plan: #000000;
+  --color-price:#1d293f;
+  --bg-cta: #fff;
+  --color-cta: #fdfdff;
+  --color-items: #010005;
+}
+
+
 .price-name{
   color:#eaff00;
   margin-bottom: 15px;
@@ -290,6 +317,15 @@ list-style: none;
   font-size: 1.2rem;
   margin-bottom: 50px;
   color: var(#fff);
+}
+.price-cta{
+  display: block;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--color-cta);
+  font-weight: 600;
+  box-shadow: 0 0 1px rgb(0, 0, 0, .5);
 }
 .price-cta{
   display: block;
@@ -633,6 +669,7 @@ body{
 }
 .testimony-text{
   max-width: 700px; 
+  text-align: center;
 }
 .testimony-course{
  
