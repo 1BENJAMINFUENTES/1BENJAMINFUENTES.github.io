@@ -345,6 +345,11 @@ body{
   height: 100%; 
   
 }
+@media (max-width:480px){
+  body{
+   background-image: url("/IMAGES/spaceresp2.jpg");
+ }
+}
 
 /*card*/
 
@@ -635,7 +640,7 @@ body{
 }
 .testimony-container{
   display: grid;
-  grid-template-columns: 50px  1fr 50px ;
+  
   gap: 1em;
   align-items: center;
   

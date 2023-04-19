@@ -28,20 +28,22 @@ body{
   }
   .DEP-contenido h2 {
     font-size: 50px;
-    color: #8c00ff;
+    color: #00f2ff;
   
   }
   .DEP-contenido h4 {
     font-size: 20px;
     color:#000000;
+    text-align: center;
+    background-color: #00000048;
    
     
     margin: 20px 0;
   }
   .DEP-contenido h5 {
-    color: #ffffff;
+    color: #ffff00;
     background-color: #0000005d;
-    
+    text-align: center;
     margin: 20px 0;
     font-size: 20px;
     line-height: 30px;
