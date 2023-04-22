@@ -28,14 +28,14 @@ body{
   }
   .DEP-contenido h2 {
     font-size: 50px;
-    color: #00f2ff;
+    color: #ffffff;
   
   }
   .DEP-contenido h4 {
     font-size: 20px;
-    color:#000000;
+    color:#ffffff;
     text-align: center;
-    background-color: #00000048;
+    background-color: #00000000;
    
     
     margin: 20px 0;
