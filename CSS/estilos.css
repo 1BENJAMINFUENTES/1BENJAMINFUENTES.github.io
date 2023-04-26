@@ -573,7 +573,7 @@ body{
     background-color: #000000;
     border: #173441 2px solid;
     margin: 0 auto;
-    width: 500px;
+    
     }
     thead{
       border: #00ff55 2px solid;
@@ -619,6 +619,26 @@ body{
       padding: 10px;
       margin-left:77%;
   }
+   
+@media screen and (max-width: 480px){
+  button{
+    margin-left: 68%;
+      
+  }
+  .form{
+    width: 330px;
+  }
+  .tab{
+    border-collapse: collapse;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(23, 52, 65);
+    display: block;
+  
+  }
+  
+}
 
 
 
