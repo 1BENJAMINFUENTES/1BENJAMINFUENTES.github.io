@@ -2,7 +2,7 @@ function gen_table(){
     document.getElementById("tab").innerHTML="";
     let n=Number(document.getElementById("capital").value);
     let n2=Number(document.getElementById("couta").value);
-    let n3=Number(document.getElementById("interes").value);
+    let n3=20;
     if(n>0){   
         for(i=1;i<=n2;i++){
             ca=n/n2;
