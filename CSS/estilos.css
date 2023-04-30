@@ -223,11 +223,7 @@ color: #fff;
 .home-requisites {
   background-color: #00000000;
   color: rgb(255, 251, 0);
-  margin: 100px 100px 100px 100px;
- 
- 
- 
- 
+  margin: 135px 300px 100px 500px;
   
 }
 
@@ -244,8 +240,15 @@ background: url(https://static.kueski.com/v2/pics/home/bullet_check_square-abfc4
 background-size: 23px;
 padding: 0 0 10px 40px;
 list-style: none;
+font-size: 20px;
 
 
+}
+
+@media (max-width:480px){
+  .home-requisites  {
+      margin: auto;
+  }
 }
 
 
@@ -299,8 +302,6 @@ list-style: none;
   --color-cta: #fdfdff;
   --color-items: #010005;
 }
-
-
 .price-name{
   color:#eaff00;
   margin-bottom: 15px;
@@ -319,6 +320,24 @@ list-style: none;
   margin-bottom: 50px;
   color: var(#fff);
 }
+.price-items2{
+  margin-top: 35px;
+  display: grid;
+  gap: 1em;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: var(#fff);
+}
+.price-items3{
+  margin-top: 35px;
+  display: grid;
+  gap: 1em;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: var(#fff);
+}
 .price-cta{
   display: block;
   padding: 20px 0;
@@ -328,7 +347,16 @@ list-style: none;
   font-weight: 600;
   box-shadow: 0 0 1px rgb(0, 0, 0, .5);
 }
-.price-cta{
+.price-cta2{
+  display: block;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--color-cta);
+  font-weight: 600;
+  box-shadow: 0 0 1px rgb(0, 0, 0, .5);
+}
+.price-cta3{
   display: block;
   padding: 20px 0;
   border-radius: 10px;
