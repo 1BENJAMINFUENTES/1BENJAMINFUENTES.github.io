@@ -58,9 +58,6 @@
   
 }
 
-.nav__title{
-  font-weight: 300;
-}
 .nav__link{
   margin-left: auto;
   padding: 0%;
@@ -750,6 +747,9 @@ body{
 @media (max-width:650px){
   .testimony-body{
       display: block;
+  }
+  .testimony-container{
+    display: block;
   }
 }
 
