@@ -310,6 +310,14 @@ font-size: 20px;
   font-size: 2.5rem;
   color: var(#fff);
 }
+.price-price2{
+  font-size: 2.5rem;
+  color: var(#fff);
+}
+.price-price3{
+  font-size: 2.5rem;
+  color: var(#fff);
+}
 .price-items{
   margin-top: 35px;
   display: grid;
@@ -373,12 +381,22 @@ body{
   height: 100%; 
   
 }
+
 @media (max-width:480px){
   body{
-   background-image: url("/IMAGES/spaceresp2.jpg");
-   display: block;
+    background-image: url("/IMAGES/spaceresp2.jpg");
+    display: block;
+  }
+  .hero__container{
+    background-image: url("/IMAGES/image\ 1.png");
+    background-size: cover;
+
+  }
+  .container.about {
+    background-image: url("/IMAGES/redn2.png");
+    background-size: cover;
+  }
  }
-}
 
 /*card*/
 
@@ -968,18 +986,30 @@ body{
       font-size: 1.8rem;
   }
 
-  .price__element{
-      width: 90%;
-  }
+  .price-element{
+    width: 90%;
+}
+.price-element2{
+  width: 90%;
+}
+.price-element3{
+  width: 90%;
+}
 
-  .price__element--best{
-      width: 90%;
-      /* padding: 40px; */
-  }
+.price__element--best{
+    width: 90%;
+    /* padding: 40px; */
+}
 
-  .price__price{
-      font-size: 2rem;
-  }
+.price__price{
+    font-size: 2rem;
+}
+.price__price2{
+  font-size: 2rem;
+}
+.price__price3{
+font-size: 2rem;
+}
 
   .testimony{
       --padding-container: 60px 0;
