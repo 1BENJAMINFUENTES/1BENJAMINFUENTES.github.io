@@ -50,7 +50,9 @@
 
 /* Nav */
 .nav__title{
-  font-size: 20px;}
+  font-size: 25px;
+  font-family: sans-serif;
+}
 
 .nav{
   --padding-container:0;
