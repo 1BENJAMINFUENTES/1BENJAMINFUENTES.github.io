@@ -222,14 +222,16 @@ color: #fff;
 
 /*requisitos */
 .home-requisites {
-  background-color: #00000000;
-  color: rgb(255, 251, 0);
-  margin: 135px 300px 100px 500px;
+  background-color: #000000;
   
+  background-size: cover;
+  
+  color: rgb(0, 255, 196);
+  margin: 135px 300px 100px 500px; 
 }
 
 .home-requisites h2{
-color: white;
+color: rgb(216, 255, 0);
 font-weight: bold;
 width: 270px;
 text-align: center;
@@ -242,7 +244,6 @@ background-size: 23px;
 padding: 0 0 10px 40px;
 list-style: none;
 font-size: 20px;
-
 
 }
 
@@ -874,7 +875,7 @@ body{
 
   .nav__link--menu{
     position: fixed;
-    background-image: url("/IMAGES/MENUHD.png");
+    background-image: url("/IMAGES/menu-fondo.png");
     
     height: 110%;
     width: 100%;
@@ -885,8 +886,9 @@ body{
     z-index: 100;
     opacity: 0;
     pointer-events: none;
-    transition: .7s opacity;
+    transition: .3s opacity;
 }
+
 
   .nav__link--show{
       --show: block;

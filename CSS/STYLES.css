@@ -12,64 +12,68 @@ body{
 
 
 #aboutUS {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#aboutUS img{
+  width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+
+}
+.DEP-contenido {
+  margin: 20px 0;
+}
+.DEP-contenido h2 {
+  font-size: 45px;
+  color: #ffffff;
+  text-align: start;
+
+}
+.DEP-contenido h4 {
+  font-size: 17px;
+  color:#ffffff;
+  text-align: start;
+  background-color: #00000048;
+  line-height: 2.0rem;
+ font-family: sans-serif;
   
-  #aboutUS img{
-    width: 400px;
-    margin: 20px;
-    border-radius: 15px;
+  margin: 20px 0;
+}
+.DEP-contenido h5 {
+  color: #ffe600;
+  background-color: #000000fe;
+  text-align: start;
+  line-height: 2.0rem;
   
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 100;
+}
+@media screen and (max-width: 790px){
+ #aboutUS img {
+    width: 80%;
   }
-  .DEP-contenido {
-    margin: 20px 0;
+  #aboutUS{
+    grid-template-columns:  1fr;
+    place-items: center;
   }
-  .DEP-contenido h2 {
-    font-size: 50px;
-    color: #ffffff;
-  
-  }
-  .DEP-contenido h4 {
-    font-size: 20px;
-    color:#ffffff;
-    text-align: center;
-    background-color: #00000000;
-   
-    
-    margin: 20px 0;
-  }
-  .DEP-contenido h5 {
-    color: #ffff00;
-    background-color: #0000005d;
-    text-align: center;
-    margin: 20px 0;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 100;
-  }
-  @media screen and (max-width: 790px){
-   #aboutUS img {
-      width: 80%;
-    }
-    #aboutUS{
-      grid-template-columns:  1fr;
-      place-items: center;
-    }
-  }
-  .btk{
-    font-weight: bold;
-    border: 2px solid#ffffff;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all 0.4s;
-    background-color: #ffffff;
-    color: blue;
-  }
-  .btk :hover{
-    border: 2px solid #ffffff;
-    background: transparent;
-    color: #ffffff;
-  }
+}
+.btk{
+  font-weight: bold;
+  border: 2px solid#ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: #ffffff;
+  color: blue;
+}
+.btk :hover{
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
