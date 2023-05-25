@@ -52,7 +52,15 @@
 .nav__title{
   font-size: 25px;
   font-family: sans-serif;
+
 }
+@media (max-width:650px){
+  .nav__title{
+    font-size: 20px;
+    font-family: sans-serif;}
+   }    
+  
+
 
 .nav{
   --padding-container:0;

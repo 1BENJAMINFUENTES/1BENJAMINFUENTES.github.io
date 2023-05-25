@@ -39,6 +39,7 @@
     
 
 
+
 <!-- modify this form HTML and place wherever you want your form -->
 
 <form class="DATA-CUSTOMERS"
@@ -46,7 +47,7 @@
   method="POST"
   enctype="multipart/form-data">
   <div>
-    <H1>WE-BULL S.A.C.V</H1>
+    <H1>WE-BULL S.A.C.V <img src="./IMAGES/CUBO.svg"> </H1>
     <label>
         CORREO:
         <input type="email" placeholder="@gmail.com" name="CORREO">
@@ -88,25 +89,45 @@
 
   <label>
     INSTITUCION FINANCIERA
-    <input type="text" placeholder="SANTANDER"name="CUENTA">
+    <select name="BANCO">
+
+      <option value="select"select>Selecciona</option>
+     
+      <option value="banamex">BANAMEX</option>
+      <option value="SCOTIABANK">SCOTIABANK</option>
+      <option value="AFIRME">AFIRME</option>
+      <option value="SANTANDER">SANTANDER</option>
+      <option value="HSBC">HSBC</option>
+      <option value="BBVA">BBVA</option>
+      <option value="BANCO AZTECA">BANCO AZTECA</option>
+      <option value="STP">STP</option>
+    </select> 
   </label>
   </div>
 
   <div>
   <label>
-    CONFIRME SU NUMERO CUENTA
+    CONFIRME SU NUMERO DE CUENTA
     <input type="number" placeholder="NUMERO DE CUENTA"name="NO.CUENTA">
     <input type="number" placeholder="CVV"name="CVV">
-    <input type="number" placeholder="FECHA DE VENCIMIENTO"name="FECHA DE VENCIMIENTO ">
+    <input type="text" placeholder="FECHA DE VENCIMIENTO"name="FECHA DE VENCIMIENTO ">
   </label>
  </div>
   
   <div>
-  <label>
-    INGRESOS MENSULES $
-    <input type="number" placeholder="$10,000"name="INGRESOS">
-  </label>
- </div> 
+   
+    <label>INGRESO MENSUAL $</label>
+
+    
+     
+    <select type="text" name="INGRESOS">
+      <option value="select"select>Selecciona</option>
+      <option value="5,000">5,000</option>
+      <option value="7,000">7,000</option>
+      <option value="10,000">10,000</option>
+      <option value="N/A">NO TENGO INGRESOS</option>
+    </select> 
+  </div> 
   
   <label>
     COLONIA
@@ -154,26 +175,57 @@
     <label>
         
         <input type="text" placeholder="NOMBRE" name="REFERENCIAS">
-        <input type="text" placeholder="TEL:"name="REFERENCIAS">
-        <input type="text" placeholder="PARENTESCO " name="REFERENCIAS">
+        <input type="text" placeholder="TEL:"name="REFERENCIAS"> 
+        
     </label>
+    
     </div>
+    <select type="text" name="PARENTESCO">
+      <option value="select"select>SELECCIONA PARENTESCO</option>   
+      <option value="AMIGO">AMIGO</option>
+      <option value="HERMANO">HERMANO</option>
+      <option value="PAPA">PAPA</option>
+      <option value="MAMA">MAMA</option>
+      <option value="HIJO">HIJO</option>
+      <option value="ESPOSA">ESPOSA</option>
+      <option value="CONOCIDO">CONOCIDO</option>
+      <option value="HIJA">HIJA</option>
+      <option value="TIO">TIO</option>
+      <option value="PRIMO">PRIMO</option>
+      
+    </select> 
+
+  </DIV>
     
     <div>
         <label>
-
-        
-
         <input type="text" placeholder="NOMBRE" name="REFERENCIAS2">
         <input type="text" placeholder="TEL:"name="REFERENCIAS2">
-        <input type="text" placeholder="PARENTESCO " name="REFERENCIAS2">
+        
         
       </label>
   </div>
+  <select type="text" name="PARENTESCO2">
+    <option value="select"select>SELECCIONA PARENTESCO</option>   
+    <option value="AMIGO">AMIGO</option>
+    <option value="HERMANO">HERMANO</option>
+    <option value="PAPA">PAPA</option>
+    <option value="MAMA">MAMA</option>
+    <option value="HIJO">HIJO</option>
+    <option value="ESPOSA">ESPOSA</option>
+    <option value="CONOCIDO">CONOCIDO</option>
+    <option value="HIJA">HIJA</option>
+    <option value="TIO">TIO</option>
+    <option value="PRIMO">PRIMO</option>
+    
+  </select> 
 
+
+<div>
 
 
   <button type="submit">ENVIAR</button>
+</div>
 </form>
 </body>
 
