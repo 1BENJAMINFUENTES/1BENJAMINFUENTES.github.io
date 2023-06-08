@@ -1,14 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  
 }
 
-body{
-    
-  background-color: #000000;
-}
+
 
 
 #aboutUS {
@@ -28,25 +27,26 @@ body{
 }
 .DEP-contenido h2 {
   font-size: 45px;
-  color: #ffffff;
+  color: #000000;
   text-align: start;
 
 }
 .DEP-contenido h4 {
-  font-size: 17px;
-  color:#ffffff;
+  font-size: 18px;
+  color:#000000;
   text-align: start;
-  background-color: #00000048;
+  
   line-height: 2.0rem;
  font-family: sans-serif;
   
   margin: 20px 0;
 }
 .DEP-contenido h5 {
-  color: #ffe600;
-  background-color: #000000fe;
+  color: #000000;
+  
   text-align: start;
   line-height: 2.0rem;
+  justify-content: left;
   
   margin: 20px 0;
   font-size: 15px;
@@ -67,13 +67,41 @@ body{
   border: 2px solid#ffffff;
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: all 0.4s;
-  background-color: #ffffff;
-  color: blue;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 .btk :hover{
   border: 2px solid #ffffff;
   background: transparent;
   color: #ffffff;
+}
+
+
+.accordion{
+  max-width: 530px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 15px;
+  padding: 15px;
+
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgb(0, 0,0,0.2 );
+
+}
+.accordion-content:nth-child(2){
+  background-color: #ffffff;
+  border-color: #000000;
+
+}
+.accordion-content:nth-child(3){
+  background-color: #ffffff;
+  border-color: #000000;
+
+}
+.accordion-content:nth-child(4){
+  background-color: #cf9df3;
+  border-color: #ff6565;
+
 }
