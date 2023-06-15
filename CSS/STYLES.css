@@ -105,3 +105,14 @@
   border-color: #ff6565;
 
 }
+
+.btk{
+  font-weight: bold;
+  border: 2px solid#ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: all 0.4s;
+  background-color: #00000000;
+  color: rgb(0, 26, 255);
+}
