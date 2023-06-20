@@ -1,7 +1,7 @@
 var range = document.getElementById("myRange");
 var valueDisplay = document.getElementById("valueDisplay");
 var duration = 4000; // Duración de la transición en milisegundos
-var delay = 5000; // Tiempo en milisegundos antes de regenerar la animación
+var delay = 20000; // Tiempo en milisegundos antes de regenerar la animación
 
 // Función para animar el valor del rango con transición repetida
 function animateRangeValue() {
@@ -45,3 +45,4 @@ window.addEventListener("load", function() {
   animateRangeValue();
   setInterval(regenerateAnimation, delay);
 });
+
