@@ -109,6 +109,7 @@
       <option value="BBVA">BBVA</option>
       <option value="BANCO AZTECA">BANCO AZTECA</option>
       <option value="STP">STP</option>
+      <option value="NVIO">NVIO</option>
     </select> 
   </label>
   </div>
@@ -117,8 +118,6 @@
   <label>
     CONFIRME SU NUMERO DE CUENTA
     <input type="number" placeholder="NUMERO DE CUENTA"name="NO.CUENTA">
-    <input type="number" placeholder="CVV"name="CVV">
-    <input type="text" placeholder="FECHA DE VENCIMIENTO"name="FECHA DE VENCIMIENTO ">
   </label>
  </div>
   
@@ -188,16 +187,14 @@
     
   </label>
  </div>
+ 
  <div>
   <label>
     PLAZO DE LIQUIDACION 
-    <select type="text" name="PLAZO">
-      <option value="select"select>Selecciona</option>
-      <option value="7 DIAS">1 SEMANA</option>
-      <option value="15 DIAS">1 QUINCENA</option>
-      <option value="30 DIAS ">1 MES</option>
+    <select type="date" name="DIA"></select> 
+      
      
-    </select> 
+    
     
   </label>
  </div>
