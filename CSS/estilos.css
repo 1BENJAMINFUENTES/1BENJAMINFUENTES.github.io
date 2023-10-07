@@ -2,7 +2,7 @@
 
 :root{
   --padding-container: 100px 0;
-   --color-title: #ff0000;
+  --color-title: #ff0000;
 }
 
 body{
@@ -16,8 +16,6 @@ body{
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
   padding: var(--padding-container);
-  
- 
 
 }
 
@@ -206,7 +204,6 @@ width: 60px;
   
   -webkit-appearance: none;
   appearance: none;
- 
   background-color: #dddddd00;
   outline: none;
   border-radius: 5px;
