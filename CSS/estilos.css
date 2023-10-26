@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 :root{
   --padding-container: 100px 0;
@@ -50,6 +50,8 @@ z-index: -1;
 font-size: 25px;
 font-family: sans-serif;
 color: #000000;
+
+
 }
 @media (max-width:650px){
 .nav__title{
@@ -57,6 +59,9 @@ color: #000000;
   font-family: sans-serif;
   
 }
+.nav__title img{
+  margin-left: 550px;
+ } 
  }    
 
 .nav{
@@ -66,6 +71,9 @@ display: flex;
 
 
 }
+ .nav__title img{
+  margin-left: 550px;
+ } 
 
 .nav__link{
 margin-left: auto;
