@@ -71,6 +71,9 @@ display: flex;
 
 
 }
+.aviso{
+  width: 100%;
+}
 
 .nav__link{
 margin-left: auto;
