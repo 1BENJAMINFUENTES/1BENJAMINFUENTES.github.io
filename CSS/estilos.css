@@ -563,6 +563,8 @@ line-height: 5em;
 @media (max-width:480px){
 .nav__menu{
     display: block;
+    background: #fff;
+    
 }
 
 .nav__link--menu{
