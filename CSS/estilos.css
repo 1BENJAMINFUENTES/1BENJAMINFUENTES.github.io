@@ -31,6 +31,11 @@ color: rgb(241, 246, 245);
 
 }
 
+img{
+  width: 100%;
+  
+}
+
 .hero::before{
 content: "";
 position: absolute;
@@ -38,7 +43,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #ffffff;
+background-color: #ffffff00;
 border: #000000;
 
 z-index: -1;
@@ -297,7 +302,7 @@ font-size: 20px;
 /* FONDO*/
 
 body{
-background-color: #000000;
+background-color: #00000000;
 width: 100%;
 height: 100%; 
 
@@ -305,10 +310,12 @@ height: 100%;
 
 
 .hero__container{
-background-color: #000000;
+background-color: #00000000;
 
 
 }
+
+
 .container.about {
 background-image: url("/IMAGES/earth1.jpg");
 background-size: cover;
@@ -319,16 +326,16 @@ opacity: 1;
 
 @media (max-width:480px){
 body{
-  background-color: #000000;
+  background-color: #00000000;
   display: block;
 }
 .hero__container{
-  background-color: #000000;
+  background-color: #00000000;
   background-size: cover;
 
 }
 .container.about {
-  background-color: #000000;
+  background-color: #00000000;
   background-size: cover;
 }
 
@@ -382,7 +389,7 @@ button{
 /* TESTIMONY */
 .testimony{
 
-background: rgb(72 134 126);
+background: rgba(72, 134, 126, 0);
 color: #000000;
 
 
