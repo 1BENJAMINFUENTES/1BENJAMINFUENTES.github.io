@@ -43,7 +43,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: #ffffff00;
+background-color: #ffffff;
 border: #000000;
 
 z-index: -1;
@@ -102,6 +102,9 @@ border: #000000;
   list-style: circle;
   
 }
+ }
+ img{
+  width: 100%;
  }
 
 .nav__links{
@@ -302,7 +305,7 @@ font-size: 20px;
 /* FONDO*/
 
 body{
-background-color: #00000000;
+background-color: #ffffff;
 width: 100%;
 height: 100%; 
 
@@ -310,7 +313,7 @@ height: 100%;
 
 
 .hero__container{
-background-color: #00000000;
+background-color: rgb(184, 178, 178);
 
 
 }
@@ -326,16 +329,16 @@ opacity: 1;
 
 @media (max-width:480px){
 body{
-  background-color: #00000000;
+  background-color: #ffffff;
   display: block;
 }
 .hero__container{
-  background-color: #00000000;
+  background-color: #ffffff;
   background-size: cover;
 
 }
 .container.about {
-  background-color: #00000000;
+  background-color: #ffffff;
   background-size: cover;
 }
 
@@ -347,7 +350,7 @@ body{
 
 @media (max-width:480px){
 .preview{
-  background: #00000000;
+  background: #ffffff;
   align-items: center;
   align-content: center;
   margin: auto;
