@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE-BULL/DATA-CUSTOMERS</title>
+    <link rel="shortcut icon" href="./images/OYIaJ1KK_400x400.png" type="image/x-icon">
+    
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="LLEVA LAS INVERSIONES A OTRO NIVEL DIVERSIFICA TUS ACTIVOS ">
+    <meta name="description" content="APRENDE A TRADING SIN RIESGO CON SOLO 10MXN A TRAVEZ  DE UNA ASESORIA 100% DIGITAL ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1BENJAMINFUENTES.github.io/xxx.html">>
+    <meta property="og:title" content="LLEVA LAS INVERSIONES A OTRO NIVEL DIVERSIFICA TUS ACTIVOS ">
+    <meta property="og:description" content="APRENDE A TRADING SIN RIESGO CON SOLO 10MXN A TRAVEZ  DE UNA ASESORIA 100% DIGITAL ">
+    <meta property="og:image" content="https://1BENJAMINFUENTES.github.io/IMAGES/Bull.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://1BENJAMINFUENTES.github.io/xxx.html">
+    <meta property="twitter:title" content="LLEVA LAS INVERSIONES A OTRO NIVEL DIVERSIFICA TUS ACTIVOS ">
+    <meta property="twitter:description" content="APRENDE A TRADING SIN RIESGO CON SOLO 10MXN A TRAVEZ  DE UNA ASESORIA 100% DIGITAL ">
+    <meta property="twitter:image" content="https://1BENJAMINFUENTES.github.io/IMAGES/Bull.jpg">
+</head>  
+    
+    <title>Sistema de Pedidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label, select, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FRUTSE S.R.L </h1> 
+    <H2>DIV. DE WE BULL CORP. </H2> 
+    <img src="./images/atoms.svg">
+
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <form class="DATA-CUSTOMERS" action="https://formspree.io/f/xleqrknd" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+        
+        
+        <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+  
+          
+    
+        
+        <h2>SELECCIONA TU SABOR PREFERIDO </h2>
+    
+        <label for="producto">Productos:</label>
+        <select id="producto" name="producto">
+            <option value="LIMON CON CHIA 1 LITRO ">LIMON CON CHIA - $30.00 1 LITRO </option>
+            <option value="LIMON CON CHIA 1/2 LITRO ">LIMON CON CHIA - $15.00 1/2 LITRO </option>
+            <option value="ARANDANO CON FRESA">ARANDANO CON FRESA - $30.50</option>
+            <option value="GUAYABA">GUAYABA - $30.50</option>
+            <option value="NARANJA">NARANJA - $30.50</option>
+            <!-- Add more options as needed -->
+
+        </select>
+
+        <label for="Tamaño">Tamaño:</label>
+        <select id="Tamaño" name="Tamaño">
+            <option value="litro ">UN LITRO </option>
+            <option value="medio litro ">MEDIO LITRO  </option>
+            
+    
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+    
+        <button type="button" onclick="agregarProducto()">Agregar al Pedido</button>
+    
+        <h2>Resumen del Pedido</h2>
+        <ul id="lista-pedido"></ul>
+    
+        <p>Total: $<span id="total">0.00</span></p>
+    
+        <button type="submit">Confirmar Pedido</button>
+    </form>
+    
+
+    <script>
+        // Script para manejar la lógica del pedido en el lado del cliente
+        let productosSeleccionados = [];
+        let total = 0;
+
+        function agregarProducto() {
+            const producto = document.getElementById("producto").value;
+            const cantidad = parseInt(document.getElementById("cantidad").value);
+            const precioUnitario = obtenerPrecioUnitario(producto);
+            const subtotal = cantidad * precioUnitario;
+
+            productosSeleccionados.push({ producto, cantidad, subtotal });
+            total += subtotal;
+
+            actualizarResumenPedido();
+        }
+
+        function obtenerPrecioUnitario(producto) {
+            // Define los precios unitarios de tus productos
+            const precios = {
+    "LIMON CON CHIA 1 LITRO ": 30.00,
+    "LIMON CON CHIA 1/2 LITRO ": 15.00,
+    "ARANDANO CON FRESA": 30.00,
+    "GUAYABA": 30.00,
+    "NARANJA": 30.00,
+    "MANZANA": 35.00,
+    "KIWI": 40.00,
+    // Agrega más precios según sea necesario
+};
+
+
+            return precios[producto] || 0;
+        }
+
+        function actualizarResumenPedido() {
+            const listaPedido = document.getElementById("lista-pedido");
+            const totalElement = document.getElementById("total");
+
+            // Limpia la lista antes de actualizarla
+            listaPedido.innerHTML = "";
+
+            // Actualiza la lista de productos
+            productosSeleccionados.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.cantidad} x ${item.producto} - $${item.subtotal.toFixed(2)}`;
+                listaPedido.appendChild(li);
+            });
+
+            // Actualiza el total
+            totalElement.textContent = total.toFixed(2);
+        }
+    </script>
+    <!-- your other form fields go here -->
+  
+</body>
+</html>
+
+
