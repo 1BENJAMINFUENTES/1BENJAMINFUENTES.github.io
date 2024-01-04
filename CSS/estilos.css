@@ -676,88 +676,43 @@ line-height: 5em;
 
 }
 
-@media (max-width:480px){
-.hero__title{
-    font-size: 2rem;
-}
-
-.hero__paragraph{
-    font-size: 1rem;
-}
-
-.subtitle{
-    font-size: 1.8rem;
-}
-
-.price-element{
-    width: 90%;
-}
-.price-element2{
-  width: 90%;
-}
-.price-element3{
-  width: 90%;
-}
-
-.price__element--best{
-    width: 90%;
-    /* padding: 40px; */
-}
-
-.price__price{
-    font-size: 2rem;
-}
-.price__price2{
-  font-size: 2rem;
-}
-.price__price3{
-font-size: 2rem;
-}
-
-.questions__title{
-    font-size: 1rem;
-}
-
-.footer__title{
-    justify-self: start;
-    margin-bottom: 15px;
-}
-
-.nav--footer{
-    padding-bottom: 60px;
-}
-
-.nav__link--footer{
-    justify-content: space-between;
-}
-
-.footer__inputs{
-    flex-wrap: wrap;
-}
-
-.footer__input{
-    flex-basis: 100%;
-    margin: 0;
-    margin-bottom: 16px;
-}
-
-.footer__submit{
-    margin-right: auto;
-    margin-left: 0;
+@media (max-width:650px){
+  .testimony-body{
+      display: block;
+  
     
-
-   
-}
-}
-
-
-.btn {
-  background-color: #000;
-  color: #fff;
-  font-size: 14px;
-  margin-left: 17%;
-  border: 1px solid #fff;
-  border-radius: 30px;
-  padding: 12px 40px;
-  cursor: pointer;
-}
+      
+      
+  }
+  .testimony-container{
+    display: block;
+  }
+  
+  .boton{
+    text-align: center;
+  }
+  
+  .atoms{
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .reseña{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  }
+  
+  
+  
+  
+  .btn {
+    background-color: #00ff1e;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 25%;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    padding: 12px 40px;
+    cursor: pointer;
+  }
