@@ -562,6 +562,8 @@ line-height: 5em;
   .atoms{
     justify-content: center;
     align-items: center;
+    margin-left: 60px;
+    
   
   }
   .reseña{
@@ -573,6 +575,8 @@ line-height: 5em;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
+    line-height: 6;
+
   
   }
   }
@@ -589,4 +593,10 @@ line-height: 5em;
     border-radius: 35px;
     padding: 12px 40px;
     cursor: pointer;
+  }
+
+  img{
+    width: 60%;
+  
+
   }
