@@ -330,7 +330,7 @@ opacity: 1;
 
 @media (max-width:480px){
 body{
-  background-color: #ffffff;
+  background-color: #000000;
   display: block;
 }
 .hero__container{
