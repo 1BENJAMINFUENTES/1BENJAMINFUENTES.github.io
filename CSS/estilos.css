@@ -587,11 +587,11 @@ line-height: 5em;
   .btn {
     background-color: #000000;
     color: #fff;
-    font-size: 14px;
-    margin-left: 25%;
+    
+    margin-left: 21%;
     border: 1px solid #04ff00;
     border-radius: 35px;
-    padding: 12px 40px;
+    padding: 12px 33px;
     cursor: pointer;
   }
 
