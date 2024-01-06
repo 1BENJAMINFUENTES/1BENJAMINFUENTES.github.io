@@ -2,11 +2,12 @@
 
 :root{
   --padding-container: 100px 0;
-  --color-title: #ff0000;
+  background-color: #000000;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: #000000;
 }
 
 .container{
@@ -707,7 +708,7 @@ line-height: 5em;
   
   
   .btn {
-    background-color: #000000;
+    background-color: #a100FF;
     color: #fff;
     font-size: 14px;
     margin-left: 25%;
