@@ -266,42 +266,6 @@ text-align: center;
 }
 }
 
-/*REQUISITOS DE PRESTAMO  */
-.home-requisites {
-background-color: #73daec;
-border-radius: 30px;
-
-background-size: cover;
-
-color: rgb(0, 0, 0);
-margin: 135px 300px 100px 500px; 
-}
-
-.home-requisites h2{
-color: rgb(0, 0, 0);
-font-weight: bold;
-width: 270px;
-text-align: center;
-
-}
-
-.home-requisites li {
-background: url(https://static.kueski.com/v2/pics/home/bullet_check_square-abfc4d422d7918cd7c72bee49f6cb1e93651ab3efa49ba514c880136a349b3e5.svg) no-repeat left top;
-background-size: 23px;
-padding: 0 0 10px 40px;
-list-style: none;
-font-size: 20px;
-
-}
-
-@media (max-width:480px){
-.home-requisites  {
-    margin: auto;
-    font-family: sans-serif;
-}
-}
-
-
 
 /* FONDO*/
 
@@ -330,7 +294,7 @@ opacity: 1;
 
 @media (max-width:480px){
 body{
-  background-color: #000000;
+  
   display: block;
 }
 .hero__container{
@@ -349,104 +313,6 @@ body{
 
 
 
-@media (max-width:480px){
-.preview{
-  background: #ffffff;
-  align-items: center;
-  align-content: center;
-  margin: auto;
-}
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 480px){
-button{
-  margin-left: 68%;
-    
-}
-.form{
-  width: 330px;
-}
-.tab{
-  border-collapse: collapse;
-  text-align: center;
-  font-family: arial;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(23, 52, 65);
-  display: block;
-
-}
-
-}
-
-
-
-
-
-/* TESTIMONY */
-.testimony{
-
-background: rgba(72, 134, 126, 0);
-color: #000000;
-
-
-}
-.testimony-container{
-display: grid;
-
-gap: 1em;
-align-items: center;
-
-}
-.testimony-body{
-display: grid;
-grid-template-columns: 1fr max-content;
-justify-content: space-between;
-align-items: center;
-gap: 2em;
-grid-column: 2/3;
-grid-row: 1/2;
-opacity: 0;
-pointer-events: none;
-
-
-}
-.testimony-body{
-pointer-events: unset;
-opacity: 1;
-transition: opacity 1.5s ease-in-out;
-}
-
-
-.testimony-img{
-width: 250px;
-height: 250px;
-border-radius: 20%;
-object-fit: cover;
-object-position: 50% 30%;  
-}
-.testimony-text{
-max-width: 700px; 
-text-align: center;
-}
-.testimony-course{
-
-color: rgb(255, 255, 255);
-display: inline-block;
-padding: 5px;
-}
-.testimony-arrow{
-width: 90%;
-cursor: pointer;
-
-}
 
 @media (max-width:650px){
 .testimony-body{
