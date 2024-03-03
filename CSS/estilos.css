@@ -585,11 +585,11 @@ line-height: 5em;
   
   
   .btn {
-    background-color: #04ff00;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     
     margin-left: 21%;
-    border: 1px solid #04ff00;
+    border: 1px solid #ffffff;
     border-radius: 35px;
     padding: 12px 33px;
     cursor: pointer;
