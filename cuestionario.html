@@ -30,7 +30,7 @@
 <body>
     <!-- Tu formulario HTML aquí -->
 
-    <H1>WE-BULL S.A.C.V <img src="./IMAGES/CUBO.svg"> </H1>
+    <H1>WE-BULL <img src="./IMAGES/CUBO.svg"> </H1>
 
     <form class="DATA-CUSTOMERS" action="https://formspree.io/f/xayzqbna" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
         
@@ -116,6 +116,9 @@
           <label for="historial-crediticio">MONTO SOLICITADO :</label>
           <select id="historial-crediticio" name="SOLICITA" required>
               <option value="2000">2000</option>
+              <option value="2000">2500</option>
+              <option value="2000">3000</option>
+              <option value="2000">3500</option>
               <option value="1500">1500</option>
               <option value="1000">1000</option>
               <option value="500">500</option>
@@ -124,7 +127,7 @@
           </select>
 
           <label for="monto-solicitado">fecha de pago:</label>
-          <input type="text" id="fecha de pago" name="fecha de pago" required>
+          <input type="date" id="fecha de pago" name="fecha de pago" required>
 
           <label for="monto-solicitado">NO. CTA :</label>
           <input type="number" id="CTA" name="ACCOUNT" required>
