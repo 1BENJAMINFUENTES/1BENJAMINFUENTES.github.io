@@ -8,142 +8,31 @@
     <title>ENTERPRISES-FMB</title>
     <link rel="shortcut icon" href="./IMAGES/REACT4.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/estilos.css">
-    <link rel="stylesheet" href="./ads.txt">
-    <meta name="google-adsense-account" content="ca-pub-6791899821964902">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791899821964902"
-    crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./CSS/login.css">
     <meta name="google-adsense-account" content="ca-pub-6791899821964902">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791899821964902" crossorigin="anonymous"></script>
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://1BENJAMINFUENTES.github.io">
-    <meta property="og:title" content="ENTERPRISES FMB">
-    <meta property="og:description" content="ENTERPRISES FMB">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://1BENJAMINFUENTES.github.io">
-    <meta property="twitter:title" content="ENTERPRISES FMB">
-    <meta property="twitter:description" content="ENTERPRISES FMB">
-    <meta property="twitter:image" content="https://1BENJAMINFUENTES.github.oi/IMAGES/Bull.jpg">
-    
-    <style>
-        .form-container {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .form-box {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        .form-box input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .form-box button {
-            width: 100%;
-            padding: 10px;
-            background: #007BFF;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-        }
-
-        .form-box .toggle-btn {
-            background: none;
-            border: none;
-            color: #007BFF;
-            text-align: center;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-    <ul class="nav__link nav__link--menu">
-        <li class="nav__items">
-            <a href="https://auth.gbm.com/signup?client_id=7c464570619a417080b300076e163289&_ga=2.151755963.389137582.1709614176-2130543249.1709614176" class="nav__links">GRUPO BURSATIL MEXICANO </a>
-        </li>
-        <li class="nav__items">
-            <a href="https://bitso.com/register" class="nav__links">BITCOIN COMPRA DE DIVISAS </a>
-        </li>
-        <li class="nav__items">
-            <a href="https://www.cetesdirecto.com/RegistroWeb_wls/init.do" class="nav__links">CERTIFICADO DE TESORERIA </a>
-        </li>
-        <li class="nav__items">
-            <a href="https://copilot.microsoft.com" class="nav__links">COPILOT I.A </a>
-        </li>
-        <img src="./IMAGES/close.svg" class="nav__close">
-    </ul>
-    <div class="nav__menu">
-        <img src="./IMAGES/menu.svg" class="nav__img">
+
+    <div class="content">
+        <img src="./IMAGES/Imagen.jpg" class="atoms">
+        <button class="login-btn" onclick="showForm('login')">Login</button>
     </div>
     
-    <button onclick="showForm('login')">Login</button>
-    <button onclick="showForm('signup')">Sign Up</button>
-    
-    <div id="loginForm" class="form-container">
+    <div id="loginForm" class="form-container hide">
         <div class="form-box">
             <h2>Login</h2>
-            <form action="http://localhost:3000/login" method="POST">
+            <form action="login.php" method="POST">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Login</button>
             </form>
-            <button class="toggle-btn" onclick="showForm('signup')">Don't have an account? Sign Up</button>
             <button class="toggle-btn" onclick="hideForm()">Close</button>
         </div>
     </div>
 
-    <div id="signupForm" class="form-container">
-        <div class="form-box">
-            <h2>Sign Up</h2>
-            <form action="http://localhost:3000/signup" method="POST">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
-            </form>
-            <button class="toggle-btn" onclick="showForm('login')">Already have an account? Login</button>
-            <button class="toggle-btn" onclick="hideForm()">Close</button>
-        </div>
-    </div>
-
-    <script>
-        function showForm(formType) {
-            hideForm();
-            document.getElementById(formType + 'Form').style.display = 'flex';
-        }
-
-        function hideForm() {
-            document.getElementById('loginForm').style.display = 'none';
-            document.getElementById('signupForm').style.display = 'none';
-        }
-    </script>
-
-    <script src="scripts/menu.js"></script>
-    <img src="./IMAGES/Imagen.jpg" class="atoms">
+    <script src="./JS/login.js"></script>
+   
 </body>
 </html>
 
