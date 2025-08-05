@@ -8,31 +8,41 @@
     <title>ENTERPRISES-FMB</title>
     <link rel="shortcut icon" href="./IMAGES/REACT4.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./view.css">
     <meta name="google-adsense-account" content="ca-pub-6791899821964902">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6791899821964902" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="container">
+    <h1>INTERES POR PRESTAMO</h1>
 
-    <div class="content">
-        <img src="./IMAGES/Imagen.jpg" class="atoms">
-        <button class="login-btn" onclick="showForm()">Login</button>
-    </div>
-    
-    <div id="loginForm" class="form-container hide">
-        <div class="form-box">
-            <h2>Login</h2>
-            <form action="login.php" method="POST">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-            <button class="toggle-btn" onclick="hideForm()">Close</button>
-        </div>
+    <div class="input-group">
+      <label for="plazo">Plazo en semanas:</label>
+      <input type="number" id="plazo">
     </div>
 
-    <script src="./scripts/login.js"></script>
-   
+    <div class="input-group">
+      <label for="pagoSemanal">Pago semanal:</label>
+      <input type="number" id="pagoSemanal">
+    </div>
+
+    <div class="input-group">
+      <label for="montoPrestamo">Monto del préstamo:</label>
+      <input type="number" id="montoPrestamo">
+    </div>
+
+    <div class="input-group">
+      <label for="semanasTranscurridas">Semanas transcurridas:</label>
+      <input type="number" id="semanasTranscurridas">
+    </div>
+
+    <button onclick="calcularGanancia()">Calcular</button>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="fuction.js"></script>
 </body>
+</html>
 </html>
 
