@@ -19,9 +19,10 @@ function calcularGanancia() {
   resultado.innerHTML = `
     <p>Total pagado: $${totalPagado.toLocaleString('es-MX')}</p>
     <p>Ganancia total: $${gananciaTotal.toLocaleString('es-MX')}</p>
-    <p>Ganancia semanal: $${gananciaSemanal.toFixed(2)}</p>
+    <!-- <p>Ganancia semanal: $${gananciaSemanal.toFixed(2)}</p> -->
     <p><strong>Ganancia hasta la semana ${semanasTranscurridas}: $${gananciaTranscurrida.toFixed(2)}</strong></p>
   `;
-  resultado.style.color = "#0f0";
+  resultado.style.color = "#000"; // Color negro, no fosforescente
 }
+
 
