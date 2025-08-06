@@ -1,14 +1,15 @@
 /* Fondo general y tipografía */
 body {
   margin: 0;
-  background-color: #000000;
+  background-color: #ffffff;
   color: #ffffff;
   font-family: 'Segoe UI', Arial, sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  padding-top: 30px;
 }
+
 
 /* Contenedor de la calculadora */
 .container {
@@ -84,3 +85,14 @@ button:hover {
   border-radius: 6px;
   border: 1px solid #555;
 }
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+
