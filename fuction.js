@@ -12,17 +12,18 @@ function calcularGanancia() {
   }
 
   const totalPagado = plazo * pagoSemanal;
-  const gananciaTotal = totalPagado - montoPrestamo;
-  const gananciaSemanal = gananciaTotal / plazo;
-  const gananciaTranscurrida = gananciaSemanal * semanasTranscurridas;
+  const interesTotal = totalPagado - montoPrestamo;
+  const interesSemanal = interesTotal / plazo;
+  const interesTranscurrido = interesSemanal * semanasTranscurridas;
 
   resultado.innerHTML = `
     <p>Total pagado: $${totalPagado.toLocaleString('es-MX')}</p>
-    <p>Ganancia total: $${gananciaTotal.toLocaleString('es-MX')}</p>
-    <!-- <p>Ganancia semanal: $${gananciaSemanal.toFixed(2)}</p> -->
-    <p><strong>Ganancia hasta la semana ${semanasTranscurridas}: $${gananciaTranscurrida.toFixed(2)}</strong></p>
+    <p>Interés total: $${interesTotal.toLocaleString('es-MX')}</p>
+    <!-- <p>Interés semanal: $${interesSemanal.toFixed(2)}</p> -->
+    <p><strong>Interés hasta la semana ${semanasTranscurridas}: $${interesTranscurrido.toFixed(2)}</strong></p>
   `;
-  resultado.style.color = "#000"; // Color negro, no fosforescente
+  resultado.style.color = "#000"; // Color negro
 }
+
 
 
